@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #604efd;
+    }
+
+    main {
+      background: white;
+      padding: 20px;
+      border-radius: 25px;
+      box-shadow: 0 0 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    main input {
+      width: 300px;
+      border-radius: 24px;
+      border: 2px solid rgb(255, 36, 156);
+      padding-left: 15px;
+      height: 40px;
+      outline: none;
+      font-weight: 800;
+    }
+
+    main button {
+      font-size: 16px;
+      font-weight: bold;
+      padding: 10px;
+      border-radius: 25px;
+      border: none;
+      color: white;
+      background: rgb(251, 34, 255);
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.432);
+      transition: all 0.3s ease-in-out;
+    }
+
+    main button:active {
+      scale: 0.8;
+    }
+
+    .img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 0;
+      overflow: hidden;
+      transition: height 0.3s ease-in-out;
+    }
+
+    .height {
+      height: 100%;
+    }
+
+    .anim {
+      animation: anim 0.3s ease-in-out 10;
+    }
+
+    @keyframes anim {
+
+      0%,
+      100% {
+        transform: translateX(0px);
+      }
+
+      25% {
+        transform: translateX(-2px);
+      }
+
+      50% {
+        transform: translateX(2px);
+      }
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qr code Generator</title>
+</head>
+
+<body>
+
+  <main>
+    <input type="text" class="" placeholder="Enter Link..." id="input">
+    <div class="img ">
+      <img src="" alt="">
+    </div>
+    <button onclick="generateQr()">Generate</button>
+  </main>
+
+
+  <script>
+    let url = 'https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=kaushal'
+
+    const img = document.querySelector(".img img")
+    const imgdiv = document.querySelector(".img ")
+    const input = document.querySelector("main input")
+
+    function generateQr() {
+      if (input.value.length > 0) {
+        let inputvalue = input.value
+        img.src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${inputvalue}`
+        imgdiv.classList.add("height")
+      } else {
+        input.classList.add("anim")
+        setTimeout(() => {
+          input.classList.remove("anim")
+        }, 1000)
+      }
+
+
+
+
+    }
+
+
+
+
+  </script>
+
+</body>
+
+</html>
