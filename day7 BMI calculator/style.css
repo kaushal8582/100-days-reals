@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+.box{
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  background: #000000;
+  box-shadow: 0 0 10px rgba(106, 106, 106, 0.918);
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+
+.box>h1{
+  font-size: 25px;
+}
+.mf{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(190, 148, 220);
+  border-radius: 25px;
+  padding: 3px 14px;
+  font-size: 12px;
+  height: 30px;
+  
+}
+.m,
+.f{
+  width: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.m h2,
+.f h2{
+  position: relative;
+  z-index: 2;
+}
+
+.card-abs{
+  position: absolute;
+  width: 50%;
+  background: rgb(97, 32, 144);
+  border-radius: 20px;
+  z-index: 1;
+  top: 0;
+  left: 0%;
+  /* right: 0; */
+  height: 30px;
+}
+
+
+
+.weight,
+.height,
+.kg-pound,
+.feat-meater{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.age{
+  width: 50%;
+  /* background: white; */
+  display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.kg-pound,
+.feat-meater{
+  gap: 10px;
+}
+.h2{
+  font-size: 16px;
+}
+.input{
+  background-color: transparent;
+  width: 50px;
+  border: none;
+  outline: none;
+  color: white;
+  padding-left: 10px;
+  border-bottom: 2px solid white;
+}
+.input:focus{
+  border-bottom: 2px solid white;
+}
+
+.btn{
+  display: grid;
+  place-items: center;
+  border: 2px solid white;
+  border-radius: 25px;
+  width: 60px;
+  height: 30px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.active{
+  background: rgb(97, 32, 144);
+  border: none;
+}
+
+button{
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
+  background: orange;
+  color: white;
+  cursor: pointer;
+}
+
+.result{
+  position: absolute;
+  left: 48%;
+  top: 20%;
+  transform: translate(-50%,-50%);
+}
+.none{
+  display: none;
+}
+
+.normal{
+  color: blue;
+}
+.overweight{
+  color: green;
+}
+.obese{
+  color: red;
+}
+.underweight{
+  color: chocolate;
+}
