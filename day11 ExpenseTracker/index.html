@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main>
+    <div class="balance-show">
+      <h2>My Balance</h2>
+      <h1>$ 70,000</h1>
+    </div>
+    <div class="second-box">
+
+      <div class="day">
+        <div class="tm">
+          <div class="today">Today</div>
+          <div class="month">Month</div>
+          <div class="slide"></div>
+        </div>
+        <h3>10 may 2024</h3>
+      </div>
+
+      <div class="alltrans">
+
+        <div class="trans">
+
+        </div>
+      </div>
+
+      <div class="addIcon">
+        +
+      </div>
+
+    </div>
+
+
+    <div class="trans-card high">
+      <div class="close-btn">
+        <h2>X</h2>
+        <h3>Add Transcation</h3>
+      </div>
+
+      <div class="amount-input">
+        <h2>Amount : </h2>
+        <input type="text">
+      </div>
+
+      <select name="option" id="option">
+        <option value="Gas">
+          <h2>Gas</h2>
+        </option>
+        <option value="electricity">
+          <h2>Electricity</h2>
+        </option>
+        <option value="food" selected>
+          <h2>Food</h2>
+        </option>
+        <option value="entertainment">
+          <h2>Entertainment</h2>
+        </option>
+        <option value="water">
+          <h2>water</h2>
+        </option>
+      </select>
+
+      <button>Add Transaction</button>
+
+    </div>
+
+  </main>
+
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>

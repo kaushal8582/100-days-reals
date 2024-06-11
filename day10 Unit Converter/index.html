@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <main>
+    <h2>UNIT Converter</h2>
+    <h3 class="h3 none" >Result : <span class="span">1 Meter = 0.001 Kilometer </span>  </h3>
+    <div class="amount flex ">
+      <h2>Amount : </h2>
+      <input type="text  " placeholder="Enter a number :">
+    </div>
+    <div class="from flex">
+      <h2>From :</h2>
+      <select name="from"  id="from" >
+        <option value="meter">Meter</option>
+        <option value="kilometer" >Kilometer</option>
+        <option value="centimeter">Centimeter</option>
+        <option value="micrometer">Micrometer</option>
+        <option value="nanometer">Nanoometer</option>
+        <option value="milw">Mile</option>
+        <option value="yard">Yard</option>
+        <option value="foot">Foot</option>
+        <option value="inch">Inch</option>
+        <option value="lightyear">Light Year</option>
+      </select>
+    </div>
+    <div class="to flex">
+      <h2>To :</h2>
+      <select name="to" id="to">
+        <option value="meter">Meter</option>
+        <option value="kilometer" selected >Kilometer</option>
+        <option value="centimeter">Centimeter</option>
+        <option value="micrometer">Micrometer</option>
+        <option value="nanometer">Nanoometer</option>
+        <option value="milw">Mile</option>
+        <option value="yard">Yard</option>
+        <option value="foot">Foot</option>
+        <option value="inch">Inch</option>
+        <option value="lightyear">Light Year</option>
+      </select>
+    </div>
+  </main>
+
+
+
+  <script src="app.js"></script>
+
+</body>
+</html>

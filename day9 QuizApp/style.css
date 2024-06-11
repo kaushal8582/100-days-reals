@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0bcaff;
+
+}
+
+main{
+  padding: 15px;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0 0 10px;
+  max-width: 350px;
+  min-width: 350px;
+  padding-bottom: 25px;
+}
+
+.blurNonActive{
+  pointer-events: none;
+  filter: blur(8px);
+}
+
+main>h2{
+  color: gray;
+  font-size: 17px;
+}
+
+.quesiton-box>h1{
+  margin-top: 15px;
+  font-size: 26px;
+}
+
+.options{
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 14px;
+}
+.que{
+  border: 2px solid gray;
+  height: 50px;
+  border-radius: 12px;
+  padding-left: 20px;
+  padding-top: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.wrong{
+  background: rgba(255, 36, 36, 0.671);
+  border-color: red;
+}
+
+.right{
+  background: rgba(84, 248, 100, 0.671);
+  border-color: green;
+}
+
+.card{
+  position: absolute;
+
+  padding: 30px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 0 10px;
+}
+
+.card h2{
+  font-size: 30px;
+}
+.card h2 span{
+  color: green;
+}
+
+.none{
+  display: none;
+}

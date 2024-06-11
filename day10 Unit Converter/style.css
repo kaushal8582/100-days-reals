@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: darkcyan;
+}
+
+main{
+  width: 350px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.424);
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.flex{
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex h2{
+  font-size: 17px;
+}
+.flex input,
+select{
+  width: 140px;
+  height: 30px;
+  border-radius: 14px;
+  border: 2px solid gray;
+  padding-left: 10px;
+  font-weight: 700;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(128, 128, 128, 0.588);
+}
+
+.flex input::selection{
+  border-color: yellow;
+}
+
+main>h2{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.h3{
+  margin-top: 15px;
+  color: red;
+  font-size: 15px;
+  text-align: center;
+}
+.span{
+  color: black;
+}
+
+.none{
+  display: none;
+}
